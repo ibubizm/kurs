@@ -1,0 +1,29 @@
+.content{
+    display: block;
+    margin-top: 30px;
+}
+
+.block__title{
+    text-align: left;
+}
+
+
+.content__items{
+    display: flex;
+    
+}
+
+.item{
+    display: flex;
+    margin: 10px;
+    background-color: #737979;
+    // width: 300px;
+    // height: 200px;
+    // border: 5px solid black;
+    border-radius: 5px;
+}
+
+.item__content{
+    display: block;
+    padding: 15px;
+}
