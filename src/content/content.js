@@ -39,7 +39,7 @@ class Content extends React.Component{
                 <div className="container">
                     <h1 className="block__title">Exchange rates {this.state.date}</h1>
                     <div className="content__items">
-                        {Object.keys(this.state.currencyRate).map((keyName, i) =>(
+                        {Object.keys(this.state.currencyRate).map((keyName) =>(
 
                         <div className="item" key={keyName}>
                             <div className="item__content">

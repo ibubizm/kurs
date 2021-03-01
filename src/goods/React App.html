@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/weather -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTs7O0VBR0Usc0JBQXNCO0VBQ3RCLFNBQVM7RUFDVCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxjQUFjO0VBQ2QsV0FBVztFQUNYLGlCQUFpQjtFQUNqQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuKixcbio6YmVmb3JlLFxuKjphZnRlcntcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xufVxuXG4uY29udGFpbmVye1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDEwMCU7XG4gIG1heC13aWR0aDogMTIwMHB4O1xuICBtYXJnaW46IDAgYXV0bztcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style><style>.App {
+  text-align: center; }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; } }
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; }
+
+.App-link {
+  color: #61dafb; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvYXBwL0FwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCLEVBQUE7O0FBR3BCO0VBQ0UsY0FBYztFQUNkLG9CQUFvQixFQUFBOztBQUd0QjtFQUNFO0lBQ0UsNENBQTRDLEVBQUEsRUFDN0M7O0FBR0g7RUFDRSx5QkFBeUI7RUFDekIsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2Qiw2QkFBNkI7RUFDN0IsWUFBWSxFQUFBOztBQUdkO0VBQ0UsY0FBYyxFQUFBIiwic291cmNlc0NvbnRlbnQiOlsiLkFwcCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLkFwcC1sb2dvIHtcbiAgaGVpZ2h0OiA0MHZtaW47XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xufVxuXG5AbWVkaWEgKHByZWZlcnMtcmVkdWNlZC1tb3Rpb246IG5vLXByZWZlcmVuY2UpIHtcbiAgLkFwcC1sb2dvIHtcbiAgICBhbmltYXRpb246IEFwcC1sb2dvLXNwaW4gaW5maW5pdGUgMjBzIGxpbmVhcjtcbiAgfVxufVxuXG4uQXBwLWhlYWRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyODJjMzQ7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgZm9udC1zaXplOiBjYWxjKDEwcHggKyAydm1pbik7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLkFwcC1saW5rIHtcbiAgY29sb3I6ICM2MWRhZmI7XG59XG5cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.nav {
+  display: flex;
+  width: 100%;
+  height: 35px;
+  background-color: #3382c2; }
+
+.nav__list {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.nav__item {
+  text-align: center;
+  list-style: none; }
+  .nav__item:hover {
+    background-color: #28679a; }
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  padding: 0 20px;
+  color: black;
+  font-weight: 700;
+  font-family: 'Yusei Magic', sans-serif; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvbmF2L25hdi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksYUFBYTtFQUNiLFdBQVc7RUFDWCxZQUFZO0VBQ1oseUJBQW1DLEVBQUE7O0FBR3ZDO0VBQ0ksYUFBYTtFQUNiLFlBQVk7RUFDWixTQUFTO0VBQ1QsVUFBVSxFQUFBOztBQUdkO0VBRUksa0JBQWtCO0VBQ2xCLGdCQUFnQixFQUFBO0VBSHBCO0lBUVEseUJBQWdELEVBQUE7O0FBT3hEO0VBQ0ksYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osV0FBVztFQUNYLHFCQUFxQjtFQUNyQixlQUFlO0VBQ2YsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixzQ0FBc0MsRUFBQSIsInNvdXJjZXNDb250ZW50IjpbIi5uYXZ7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDM1cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNTEsIDEzMCwgMTk0KTtcclxufVxyXG5cclxuLm5hdl9fbGlzdHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG59XHJcblxyXG4ubmF2X19pdGVte1xyXG4gICAgLy8gZGlzcGxheTogZmxleDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBcclxuICAgIFxyXG5cclxuICAgICY6aG92ZXJ7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZGFya2VuKHJnYig1MSwgMTMwLCAxOTQpLCAxMCUpO1xyXG4gICAgICAgIC8vIGNvbG9yOiBsaWdodGVuKHJnYig1MSwgMTMwLCAxOTQpLCAyMCUpXHJcbiAgICB9XHJcblxyXG59XHJcblxyXG5cclxuLm5hdl9fbGlua3N7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgcGFkZGluZzogMCAyMHB4O1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICAgIGZvbnQtZmFtaWx5OiAnWXVzZWkgTWFnaWMnLCBzYW5zLXNlcmlmO1xyXG5cclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.content {
+  display: block;
+  margin-top: 30px; }
+
+.block__title {
+  text-align: left; }
+
+.content__items {
+  display: flex; }
+
+.item {
+  display: flex;
+  margin: 10px;
+  background-color: #737979;
+  border-radius: 5px; }
+
+.item__content {
+  display: block;
+  padding: 15px; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29udGVudC9jb250ZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxjQUFjO0VBQ2QsZ0JBQWdCLEVBQUE7O0FBR3BCO0VBQ0ksZ0JBQWdCLEVBQUE7O0FBSXBCO0VBQ0ksYUFBYSxFQUFBOztBQUlqQjtFQUNJLGFBQWE7RUFDYixZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLGtCQUFrQixFQUFBOztBQUd0QjtFQUNJLGNBQWM7RUFDZCxhQUFhLEVBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGVudHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgbWFyZ2luLXRvcDogMzBweDtcclxufVxyXG5cclxuLmJsb2NrX190aXRsZXtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuXHJcblxyXG4uY29udGVudF9faXRlbXN7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgXHJcbn1cclxuXHJcbi5pdGVte1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIG1hcmdpbjogMTBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM3Mzc5Nzk7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbn1cclxuXHJcbi5pdGVtX19jb250ZW50e1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBwYWRkaW5nOiAxNXB4O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.block__items {
+  padding: 10px;
+  background-color: #737979;
+  border-radius: 5px; }
+
+.result {
+  text-align: left;
+  margin-top: 20px; }
+
+.culc {
+  margin-top: 20px;
+  text-align: left; }
+  .culc label {
+    margin-right: 5px; }
+
+.choise {
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29udmVyc2UvY29udmVyc2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLGFBQWE7RUFDYix5QkFBeUI7RUFDekIsa0JBQWtCLEVBQUE7O0FBSXRCO0VBQ0ksZ0JBQWdCO0VBQ2hCLGdCQUFnQixFQUFBOztBQUVwQjtFQUNJLGdCQUFnQjtFQUNoQixnQkFBZ0IsRUFBQTtFQUZwQjtJQUtRLGlCQUFpQixFQUFBOztBQU16QjtFQUNJLG1CQUFtQixFQUFBIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5ibG9ja19faXRlbXN7XHJcbiAgICBwYWRkaW5nOiAxMHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzczNzk3OTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcclxufVxyXG5cclxuXHJcbi5yZXN1bHR7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gICAgbWFyZ2luLXRvcDogMjBweDtcclxufVxyXG4uY3VsY3tcclxuICAgIG1hcmdpbi10b3A6IDIwcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG5cclxuICAgIGxhYmVse1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4O1xyXG4gICAgfVxyXG5cclxuICAgIFxyXG59XHJcblxyXG4uY2hvaXNle1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.content {
+  margin-bottom: 60px; }
+
+.weather__block {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  border-radius: 5px; }
+
+.weather__item {
+  display: block;
+  border-radius: 5px;
+  min-width: 200px;
+  background-color: #737979;
+  margin: 20px;
+  padding: 10px;
+  flex-wrap: wrap; }
+
+.item__title {
+  font-size: 30px; }
+
+.temp {
+  font-size: 50px; }
+
+.max_min_temp {
+  display: flex;
+  justify-content: space-between; }
+
+.min_temp {
+  color: aqua; }
+
+.max_temp {
+  color: red; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvd2VhdGhlci93ZWF0aGVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxtQkFBbUIsRUFBQTs7QUFHdkI7RUFDSSxhQUFhO0VBQ2IsZUFBZTtFQUNmLGdCQUFnQjtFQUVoQixrQkFBa0IsRUFBQTs7QUFJdEI7RUFDSSxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQix5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGFBQWE7RUFDYixlQUFlLEVBQUE7O0FBS25CO0VBQ0ksZUFBZSxFQUFBOztBQUduQjtFQUNJLGVBQWUsRUFBQTs7QUFHbkI7RUFDSSxhQUFhO0VBQ2IsOEJBQThCLEVBQUE7O0FBRWxDO0VBQ0ksV0FBVyxFQUFBOztBQUdmO0VBQ0ksVUFBVSxFQUFBIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRlbnR7XHJcbiAgICBtYXJnaW4tYm90dG9tOiA2MHB4O1xyXG59XHJcblxyXG4ud2VhdGhlcl9fYmxvY2t7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcclxuICAgIFxyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgXHJcbn1cclxuXHJcbi53ZWF0aGVyX19pdGVte1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICBtaW4td2lkdGg6IDIwMHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzczNzk3OTtcclxuICAgIG1hcmdpbjogMjBweDtcclxuICAgIHBhZGRpbmc6IDEwcHg7XHJcbiAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICBcclxuICAgIFxyXG59XHJcblxyXG4uaXRlbV9fdGl0bGV7XHJcbiAgICBmb250LXNpemU6IDMwcHg7XHJcbn1cclxuXHJcbi50ZW1we1xyXG4gICAgZm9udC1zaXplOiA1MHB4O1xyXG59XHJcblxyXG4ubWF4X21pbl90ZW1we1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG4ubWluX3RlbXB7XHJcbiAgICBjb2xvcjogYXF1YTtcclxufVxyXG5cclxuLm1heF90ZW1we1xyXG4gICAgY29sb3I6IHJlZDtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.form {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .form input {
+    width: 1000px;
+    padding: 5px 10px;
+    margin-right: 5px; }
+  .form button {
+    font-family: inherit;
+    border: none;
+    color: #fff;
+    padding: 0 20px;
+    background-color: #4285F4;
+    border-radius: 6px; }
+    .form button:hover {
+      background-color: #1266f1; }
+
+.block2 {
+  margin-top: 20px; }
+
+.ul {
+  display: block;
+  text-align: center; }
+
+.li {
+  display: flex;
+  border: 1px solid black;
+  border-bottom: 0;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+  font-weight: 500;
+  overflow: hidden;
+  width: 1000px;
+  order: 1;
+  justify-content: space-between; }
+  .li:last-child {
+    border-bottom: 1px solid black; }
+
+.btn {
+  border: none;
+  background-color: #0275d8;
+  border-radius: 6px;
+  padding: 0 20px;
+  font-family: inherit;
+  order: 2;
+  margin-right: 10px;
+  height: 100%;
+  width: auto;
+  border: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvdGVzdC90ZXN0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxvQkFBb0I7RUFDcEIsZ0JBQWdCO0VBQ2hCLG1CQUFtQixFQUFBO0VBSHZCO0lBTVEsYUFBYTtJQUNiLGlCQUFpQjtJQUNqQixpQkFBaUIsRUFBQTtFQVJ6QjtJQVlRLG9CQUFvQjtJQUNwQixZQUFZO0lBQ1osV0FBVztJQUNYLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsa0JBQWtCLEVBQUE7SUFqQjFCO01Bb0JZLHlCQUFzQyxFQUFBOztBQUtsRDtFQUNJLGdCQUFnQixFQUFBOztBQU9wQjtFQUNJLGNBQWM7RUFDZCxrQkFBa0IsRUFBQTs7QUFHdEI7RUFFSSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLGdCQUFnQjtFQUNoQixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFFYixRQUFRO0VBRVIsOEJBQThCLEVBQUE7RUFkbEM7SUFpQlEsOEJBQThCLEVBQUE7O0FBSXRDO0VBQ0ksWUFBWTtFQUNaLHlCQUhjO0VBSWQsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsUUFBUTtFQUNSLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlLEVBQUEiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybXtcclxuICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gICAgbWFyZ2luLXRvcDogMjBweDtcclxuICAgIG1hcmdpbi1ib3R0b206IDMwcHg7XHJcblxyXG4gICAgaW5wdXR7XHJcbiAgICAgICAgd2lkdGg6IDEwMDBweDtcclxuICAgICAgICBwYWRkaW5nOiA1cHggMTBweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDVweDtcclxuICAgIH1cclxuXHJcbiAgICBidXR0b257XHJcbiAgICAgICAgZm9udC1mYW1pbHk6IGluaGVyaXQ7XHJcbiAgICAgICAgYm9yZGVyOiBub25lO1xyXG4gICAgICAgIGNvbG9yOiAjZmZmO1xyXG4gICAgICAgIHBhZGRpbmc6IDAgMjBweDtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDI4NUY0O1xyXG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcclxuXHJcbiAgICAgICAgJjpob3ZlcntcclxuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogZGFya2VuKCM0Mjg1RjQsIDEwJSk7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG59XHJcblxyXG4uYmxvY2sye1xyXG4gICAgbWFyZ2luLXRvcDogMjBweDtcclxufVxyXG5cclxuLy8gLnRpdGxle1xyXG4vLyAgICAgdGV4dC1hbGlnbjogbGVmdDtcclxuLy8gfVxyXG5cclxuLnVse1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5saXtcclxuXHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XHJcbiAgICBib3JkZXItYm90dG9tOiAwO1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gICAgcGFkZGluZzogMTBweDtcclxuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gICAgd2lkdGg6IDEwMDBweDtcclxuICAgIC8vIGJhY2tncm91bmQtY29sb3I6ICRwcmltYXJ5O1xyXG4gICAgb3JkZXI6IDE7XHJcblxyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG5cclxuICAgICY6bGFzdC1jaGlsZHtcclxuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgYmxhY2s7XHJcbiAgICB9XHJcbn1cclxuJHByaW1hcnk6IFx0IzAyNzVkODtcclxuLmJ0bntcclxuICAgIGJvcmRlcjogbm9uZTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICRwcmltYXJ5O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xyXG4gICAgcGFkZGluZzogMCAyMHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IGluaGVyaXQ7XHJcbiAgICBvcmRlcjogMjtcclxuICAgIG1hcmdpbi1yaWdodDogMTBweDtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIHdpZHRoOiBhdXRvO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><script charset="utf-8" src="./React App_files/main.7e828b5d6906f38b2e27.hot-update.js.Без названия"></script><script charset="utf-8" src="./React App_files/main.c73c1dd89e6d065e1c01.hot-update.js.Без названия"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><nav class="nav"><div class="container"><ul class="nav__list"><li class="nav__item"><a class="nav__links" href="http://localhost:3000/">Main</a></li><li class="nav__item"><a class="nav__links" href="http://localhost:3000/about">About</a></li><li class="nav__item"><a class="nav__links" href="http://localhost:3000/do_list">Do list</a></li><li class="nav__item"><a class="nav__links" href="http://localhost:3000/weather">Weather</a></li></ul></div></nav><div class="weather"><h1>Weather</h1><div class="content"><form><input name="city" type="text" value="minsk"><button type="submit">push</button></form></div><div class="weather__block"><div class="weather__item"><div class="item__title">Minsk</div><div class="temp">5</div><img src="./React App_files/01n@2x.png" alt=""><div class="max_min_temp"><div class="min_temp">↓ 5</div><div class="desc">Clear</div><div class="max_temp">↑ 5</div><button>del</button></div></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.Без названия"></script><script src="./React App_files/vendors_main.chunk.js.Без названия"></script><script src="./React App_files/main.chunk.js.Без названия"></script>
+
+</body></html>

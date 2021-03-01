@@ -14,8 +14,6 @@ class Converse extends React.Component{
     calcRate = (e) =>{
         e.preventDefault()
         let elements = e.target.elements
-        console.log(elements.inp.value)
-        console.log(elements.sel.value)
         let current_value = elements.inp.value
         let valute = elements.sel.value
         let a = this.props.rate[valute]

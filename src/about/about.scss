@@ -1,0 +1,29 @@
+.input__change{
+    border: none;
+    height: 100%;
+    outline: none;
+    font-size: 22px;
+}
+
+.li-s{
+    display: flex;
+    align-items: center;
+}
+.input__value{
+    font-size: 22px;
+
+}
+
+.form__change{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn--del{
+    background-color: #d9534f;
+}
+
